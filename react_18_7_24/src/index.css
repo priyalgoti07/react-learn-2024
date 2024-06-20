@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.password-input::selection {
+    background-color: rgb(186, 220, 233);
+}

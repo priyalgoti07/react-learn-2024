@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import BgChanger from './Componets/BgChanger.jsx'
 import './index.css';
+import PassWordGenrator from './Componets/PassWordGenrator.jsx';
 function MyApp() {
   return (
 
@@ -17,5 +18,6 @@ const reactElement = React.createElement(
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <App/>
-  <BgChanger />
+  // <BgChanger />
+  <PassWordGenrator />
 )
