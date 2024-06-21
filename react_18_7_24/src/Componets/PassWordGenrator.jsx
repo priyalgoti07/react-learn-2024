@@ -12,6 +12,7 @@ const PassWordGenrator = () => {
     const passworfRef = useRef(null);
 
     const passwordGenrator = useCallback(() => {
+        console.log("i am useCallback");
         let pass = "";
         let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZa bcdefghijklmnopqrstuvwxyz"
 
@@ -34,6 +35,7 @@ const PassWordGenrator = () => {
     }, [password])
 
     useEffect(() => {
+        console.log("i am useEffcet");
         passwordGenrator();
     }, [length, nuberAllowed, charAllowed, passwordGenrator])
 
@@ -42,6 +44,7 @@ const PassWordGenrator = () => {
         <>
             <div className='w-full max-w-2xl mx-auto shadow-md rounded-lg p-6 my-8 text-orange-500 bg-gray-700'>
                 <h1 className='text-white text-center'>PassWord Genrator</h1>
+
                 <div className='w-full max-w-2xl mx-auto rounded-lg p-6  text-orange-500 bg-gray-700 flex'>
                     <input
                         type='text'
